@@ -1,0 +1,11 @@
+<div>
+<p>Parent sent message - </p>
+<app-child [message]="parentMsg"></app-child>
+
+<app-child (notify)="receiveMessage($event)"></app-child>
+
+ Message Received from child
+ 
+{{childMsg}}
+
+</div>
